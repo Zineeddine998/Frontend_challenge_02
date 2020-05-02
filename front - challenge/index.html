@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/tailwind-output.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Frontend Mentor | Bookmark landing page</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+  <div class="container py-8 lg:py-10 m-auto">
+    <nav class="flex justify-between items-center">
+      <div class="logo w-32 sm:w-40 md:w-48">
+        <img src="assets/logo-bookmark.svg" alt="logo of the company" class="img">
+      </div>
+      <div class="nav-d hidden w-1/2 lg:flex items-center justify-between xl:w-2/5">
+        <h6 class="link">FEATURES</h6>
+        <h6 class="link">PRICING</h6>
+        <h6 class="link">CONTACT</h6>
+        <button class="btn btn-red lg:py-2 lg:text-xs lg:tracking-2xl">LOGIN</button>
+      </div>
+      <span class="toggler cursor-pointer sm:w-6 md:w-8 lg:hidden">
+        <img src="assets/icon-hamburger.svg" alt="toggler icon" class="img">
+      </span>
+      <div class="nav-m hidden bg-very-dark-blue bg-opacity-95 p-8 fixed top-0 right-0 bottom-0 left-0 flex flex-col">
+        <div class="flex flex-row justify-between items-center">
+          <span class="logo-m w-32">
+            <img src="assets/logo-bookmark-w.svg" alt="" class="img">
+          </span>
+          <span class="toggler-close cursor-pointer sm:w-6 md:w-8">
+            <img src="assets/icon-close.svg" alt="" class="img">
+          </span>
+        </div>
+        <div class="flex flex-col items-center mt-8">
+          <div class="link-m">
+            <h4>FEATURES</h4>
+          </div>
+          <div class="link-m">
+            <h4>PRICING</h4>
+          </div>
+          <div class="link-m">
+            <h4>CONTACT</h4>
+          </div>
+          <div class="link-m">
+            <button class="w-full border-2 border-white py-2 rounded-md">
+              <h4 class="font-bold">LOGIN</h4>
+            </button>
+          </div>
+        </div>
+        <div class="flex justify-center items-center mt-auto">
+          <span class="mr-8">
+            <img src="assets/icon-facebook.svg" alt="" class="img">
+          </span>
+          <span>
+            <img src="assets/icon-twitter.svg" alt="" class="img">
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="intro flex flex-col mt-16 lg:flex-row lg:items-center lg:justify-between">
+      <div class="illustration order-1 lg:order-2 lg:w-1/2 lg:absolute lg:right-0 lg:mt-10 xl:mt-20">
+        <span id="intro-bg">
+          <img src="assets/illustration-hero.svg" alt="" class="img">
+        </span>
+      </div>
+
+      <div class="slogan flex flex-col items-center order-2 mt-10 lg:order-1 lg:items-start lg:w-1/2">
+        <h2 class="lg:text-left lg:text-4xl lg:leading-tight xl:text-5xl">A Simple Bookmark Manager</h2>
+        <p class="p-gray mb-6 lg:text-left xl:text-lg">
+          A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="buttons flex justify-between">
+          <button class="btn btn-blue mr-4">Get it on Chrome</button>
+          <button class="btn btn-white">Get it on Firefox</button>
+        </div>
+      </div>
+    </div>
+    <div class="features flex flex-col mt-32 lg:mt-56">
+      <h3>Features</h3>
+      <p class="p-gray lg:self-center lg:w-1/2">
+        Our aim is to make it quick and easy for you to access your favourite websites.
+        Your bookmarks sync between your devices so you can access them on the go.
+      </p>
+      <div class="tabs flex flex-col mt-6 text-very-dark-blue lg:flex-row lg:w-4/5 lg:self-center">
+        <div class="tab" id="tab0">
+          <h5 id="tab-title0" class="lg:text-base lg:font-normal">Simple Bookmarking</h5>
+          <hr id="tab-highlight0">
+        </div>
+        <div class="tab w-full" id="tab1">
+          <h5 id="tab-title1" class="lg:text-base lg:font-normal">Speedy Searching</h5>
+          <hr id="tab-highlight1">
+        </div>
+        <div class="tab w-full" id="tab2">
+          <h5 id="tab-title2" class="lg:text-base lg:font-normal">Easy Sharing</h5>
+          <hr id="tab-highlight2">
+        </div>
+      </div>
+      <div class="tab-content" id="tab-content0">
+        <div class="illustration">
+          <span id="content-img-bg">
+            <img src="assets/illustration-features-tab-1.svg" alt="" class="img">
+          </span>
+        </div>
+        <div class="jumbotron mt-16 sm:mt-32">
+          <h3>Bookmark in one click</h3>
+          <p class="p-gray">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface
+            gives you complete control over how you manage your favourite sites.
+          </p>
+          <button class="btn btn-blue mt-8">
+            More Info
+          </button>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-content1">
+        <div class="illustration">
+          <span id="content-img-bg-2">
+            <img src="assets/illustration-features-tab-2.svg" alt="" class="img">
+          </span>
+        </div>
+        <div class="jumbotron mt-10">
+          <h3>Intelligent Search</h3>
+          <p class="p-gray">
+            Our powerful search feature will help you find saved sites in no time at all.
+            No need to trawl through all of your bookmarks.
+          </p>
+          <button class="btn btn-blue mt-8">
+            More Info
+          </button>
+        </div>
+      </div>
+      <div class="tab-content" id="tab-content2">
+        <div class="illustration">
+          <span id="content-img-bg-3">
+            <img src="assets/illustration-features-tab-3.svg" alt="" class="img">
+          </span>
+        </div>
+        <div class="jumbotron mt-16">
+          <h3>Share Your Bookmarks</h3>
+          <p class="p-gray">
+            Easily share your bookmarks and collections with others. Create a shareable
+            link that you can send at the click of a button.
+          </p>
+          <button class="btn btn-blue mt-8">
+            More Info
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="install flex flex-col mt-32 lg:mt-40">
+      <h3>Download the extension</h3>
+      <p class="p-gray lg:self-center lg:w-2/3">
+        We’ve got more browsers in the pipeline. Please do let us know if you’ve
+        got a favourite you’d like us to prioritize.
+      </p>
+      <div class="extension-cards flex flex-col mt-6 lg:flex-row lg:items-center lg:self-center">
+        <div class="card">
+          <div class="w-20 h-20">
+            <img src="assets/logo-chrome.svg" alt="" class="img">
+          </div>
+          <h4 class="mt-4">Add to Chrome</h4>
+          <p class="p-gray">Minimum version 62</p>
+          <div class="mt-6 mb-4">
+            <img src="assets/bg-dots.svg" alt="">
+          </div>
+          <div class="w-full px-6">
+            <button class="btn btn-blue w-full lg:px-2">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="card lg:mx-8">
+          <div class="w-20 h-20">
+            <img src="assets/logo-firefox.svg" alt="" class="img">
+          </div>
+          <h4 class="mt-4">Add to Firefox</h4>
+          <p class="p-gray">Minimum version 55</p>
+          <div class="mt-6 mb-4">
+            <img src="assets/bg-dots.svg" alt="">
+          </div>
+          <div class="w-full px-6">
+            <button class="btn btn-blue w-full lg:px-2">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="w-20 h-20">
+            <img src="assets/logo-opera.svg" alt="" class="img">
+          </div>
+          <h4 class="mt-4">Add to Opera</h4>
+          <p class="p-gray">Minimum version 46</p>
+          <div class="mt-6 mb-4">
+            <img src="assets/bg-dots.svg" alt="">
+          </div>
+          <div class="w-full px-6">
+            <button class="btn btn-blue w-full lg:px-2">
+              Add & Install Extension
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq flex flex-col mt-24">
+      <h3>Frequently Asked Questions</h3>
+      <p class="p-gray lg:w-1/2 lg:self-center">
+        Here are some of our FAQs. If you have any other questions you’d like
+        answered please feel free to email us.
+      </p>
+      <div class="flex flex-col mt-12">
+        <div class="q-tab" id="qtab-1">
+          <label for="qtab-toggler1" class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <h5 id="qtab-title" class="lg:text-lg">
+                What is Bookmark?
+              </h5>
+              <div class="arrow">
+              </div>
+            </div>
+          </label>
+          <input type="checkbox" id="qtab-toggler1" class="hidden">
+          <div class="p-gray hidden" id="answer1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+            justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+          </div>
+        </div>
+        <div class="q-tab" id="qtab-2">
+          <label for="qtab-toggler2" class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <h5 id="qtab-title2" class="lg:text-lg">
+                How can I request a new browser?
+              </h5>
+              <div class="arrow">
+              </div>
+            </div>
+          </label>
+          <input type="checkbox" id="qtab-toggler2" class="hidden">
+          <div class="p-gray hidden" id="answer2">
+            Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula.
+            Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+            ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+          </div>
+        </div>
+        <div class="q-tab" id="qtab-3">
+          <label for="qtab-toggler3" class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <h5 id="qtab-title3" class="lg:text-lg">
+                Is there a mobile app?
+              </h5>
+              <div class="arrow">
+              </div>
+            </div>
+          </label>
+          <input type="checkbox" id="qtab-toggler3" class="hidden">
+          <div class="p-gray hidden" id="answer3">
+            Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum
+            urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed
+            sollicitudin ex et ultricies bibendum.
+          </div>
+        </div>
+        <div class="q-tab" id="qtab-4">
+          <label for="qtab-toggler4" class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <h5 id="qtab-title4" class="lg:text-lg">
+                What about other Chromium browsers?
+              </h5>
+              <div class="arrow">
+              </div>
+            </div>
+          </label>
+          <input type="checkbox" id="qtab-toggler4" class="hidden">
+          <div class="p-gray hidden" id="answer4">
+            Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam
+            vitae neque eget nisl gravida pellentesque non ut velit.
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-blue self-center mt-8">
+        More Info
+      </button>
+    </div>
+  </div>
+  <div class="subscribe flex flex-col bg-soft-blue px-8 py-12 lg:items-center">
+    <h6 class="text-white tracking-4xl lg:mb-8">
+      35,000+ ALREADY JOINED
+    </h6>
+    <h3 class="text-white mb-6 lg:w-1/3 lg:text-2xl">
+      Stay up-to-date with what we're doing
+    </h3>
+    <div class="flex flex-col lg:flex-row lg:justify-center lg:items-start">
+      <div class="result-bg lg:mr-4">
+        <div class="flex items-center">
+          <input type="text" class="input rounded-md px-4 py-3 mb-2 w-full focus:outline-none lg:mb-0"
+            placeholder="Enter your email address" id="email">
+          <div class="error-icon hidden -ml-8"></div>
+        </div>
+        <p class="result-text font-medium italic text-xs text-left text-white hidden"></p>
+      </div>
+      <button class="contact-button btn btn-red focus:bg-soft-red">Contact Us</button>
+    </div>
+  </div>
+  <footer class="flex flex-col">
+    <div
+      class="flex flex-col justify-between items-center py-10 bg-very-dark-blue lg:flex-row lg:justify-around lg:px-20 lg:py-8">
+      <div class="logo">
+        <img src="assets/logo-bookmark-footer.svg" alt="">
+      </div>
+      <div class="flex flex-col my-8 lg:flex-row lg:my-0 lg:items-center lg:flex-grow lg:ml-10">
+        <h5 class="footer-link">FEATURES</h5>
+        <h5 class="footer-link my-6 lg:my-0 lg:mx-10">PRICING</h5>
+        <h5 class="footer-link">CONTACT</h5>
+      </div>
+      <div class="flex items-center">
+        <span class="w-6 mr-6">
+          <img src="assets/icon-facebook.svg" alt="" class="img">
+        </span>
+        <span>
+          <img src="assets/icon-twitter.svg" alt="" class="img">
+        </span>
+      </div>
+    </div>
+    <div class="credits bg-very-dark-blue flex flex-col items-center w-full lg:flex-row lg:justify-around lg:py-5">
+      <h6 class="text-white text-base sm:text-lg md:text-xl">Challenge by
+        <a class="font-bold text-soft-red"
+          href="https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158"
+          target="_blank">Frontend Mentor
+        </a></h6>
+  
+    </div>
+  </footer>
+
+
+  <script src="js/navbar-toggle.js"></script>
+  <script src="js/tab-toggle.js"></script>
+  <script src="js/email-validation.js"></script>
+</body>
+
+</html>

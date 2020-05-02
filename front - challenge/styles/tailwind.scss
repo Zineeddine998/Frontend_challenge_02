@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+
+@tailwind base;
+
+html {
+  @apply antialiased font-body;
+}
+
+body {
+  @apply min-h-screen overflow-x-hidden;
+}
+
+h1 {
+  @apply text-3xl text-center font-medium;
+}
+
+h2 {
+  @apply text-2xl text-center font-medium;
+}
+
+h3 {
+  @apply text-xl text-center font-medium;
+}
+
+h4 {
+  @apply text-base text-center font-medium;
+}
+
+h5 {
+  @apply text-sm text-center font-medium;
+}
+
+h6 {
+  @apply text-xs text-center font-medium;
+}
+
+p {
+  @apply text-center;
+}
+
+.p-gray {
+  @apply text-grayish-blue;
+}
+
+a {
+  @apply text-blue-600 underline;
+}
+
+.img {
+  @apply w-full h-auto;
+}
+
+/* Nav Desktop Links */
+
+.link {
+  @apply text-very-dark-blue tracking-widest font-medium cursor-pointer transition-colors duration-300;
+
+  &:hover {
+    @apply text-soft-red;
+  }
+}
+
+/* Nav Mobile Links */
+
+.link-m {
+  @apply border-t border-grayish-blue py-4 w-full;
+
+  h4 {
+    @apply text-white text-center tracking-widest;
+  }
+}
+
+/* Paragraphs */
+
+.p-gray {
+  @apply text-grayish-blue text-sm font-medium mt-3;
+}
+
+/* Buttons */
+
+.btn {
+  @apply text-sm py-2 px-3 rounded-md shadow-lg transition-colors duration-300;
+
+  &:hover {
+    @apply bg-white #{!important};
+  }
+}
+
+.btn.btn-blue {
+  @apply bg-soft-blue text-white border-soft-blue border-2;
+
+  &:hover {
+    @apply text-soft-blue;
+  }
+}
+
+.btn.btn-red {
+  @apply bg-soft-red text-white border-soft-red border-2;
+
+  &:hover {
+    @apply text-soft-red;
+  }
+}
+
+.btn.btn-white {
+  @apply bg-light-gray text-very-dark-blue;
+
+  &:hover {
+    @apply border-very-dark-blue border-2;
+  }
+}
+
+/* Tabs */
+
+.tab-content {
+  @apply hidden flex flex-col mt-16;
+
+  .jumbotron {
+    @apply flex flex-col items-center;
+  }
+}
+
+.tab {
+  @apply border-b border-t flex flex-col items-center cursor-pointer;
+
+  h5 {
+    @apply font-medium my-3;
+  }
+
+  hr {
+    @apply border-soft-red border-2 w-1/2;
+  }
+}
+
+/* Extension Card */
+
+.extension-cards {
+  .card {
+    @apply flex flex-col items-center w-full shadow-xl rounded-lg pb-6 pt-12 mt-6;
+  }
+}
+
+/* Question Tab */
+
+.q-tab {
+  @apply flex flex-col py-4 border-b;
+
+  h5 {
+    @apply text-very-dark-blue font-medium transition-colors duration-300;
+
+    &:hover {
+      @apply text-soft-red;
+    }
+  }
+}
+
+/* Subscribe */
+
+.subscribe {
+  .input::placeholder {
+    @apply text-xs text-grayish-blue;
+  }
+}
+
+/* Footer */
+
+footer {
+  .footer-link {
+    @apply text-white font-medium tracking-xl transition-colors duration-300 cursor-pointer;
+
+    &:hover {
+      @apply text-soft-red;
+    }
+  }
+}
+
+@tailwind components;
+
+@tailwind utilities;
+
+@screen lg {
+  h3 {
+    @apply text-3xl;
+  }
+
+  .btn {
+    @apply text-sm px-6 py-3;
+  }
+
+  .p-gray {
+    @apply text-base font-normal;
+  }
+
+  .tab-content {
+    @apply flex-row items-center;
+
+    .illustration {
+      @apply mr-10;
+    }
+
+    .jumbotron {
+      @apply mt-0 items-start w-1/2;
+
+      .p-gray {
+        @apply text-left text-base font-normal;
+      }
+    }
+  }
+
+  .tab {
+    @apply w-full border-t-0;
+    &:hover {
+      h5 {
+        @apply transition-colors duration-300 text-soft-red;
+      }
+
+      hr {
+        display: block;
+        animation-name: extend;
+        animation-duration: 0.2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        width: 100%;
+      }
+    }
+
+    @keyframes extend {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  }
+
+  .q-tab {
+    @apply w-1/2 self-center;
+
+    .p-gray {
+      @apply leading-loose;
+    }
+  }
+
+  .card:nth-child(2) {
+    @apply mt-20;
+  }
+
+  .card:nth-child(3) {
+    @apply mt-32;
+  }
+
+  footer {
+    .footer-link {
+      @apply text-xs;
+    }
+  }
+}
